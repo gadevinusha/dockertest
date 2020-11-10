@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "keH1xGSs/1y+LXu/mKK48oT46Kj2APcZ7ZlscRfCeirbcxEONPuxdmCIBP/C2ocuURg9shTCtCcEJ1elB71iCg==",
+  "success": true,
+  "projectFilePath": "D:\\Accenture\\PrivateTest\\PrivateTest\\webApp\\DataModels\\DataModels.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vinusha\\.nuget\\packages\\mongodb.bson\\2.11.0\\mongodb.bson.2.11.0.nupkg.sha512"
+  ],
+  "logs": []
+}

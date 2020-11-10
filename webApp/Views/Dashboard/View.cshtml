@@ -1,0 +1,46 @@
+﻿@using webApp.Models.Dashboard    
+@model DashboardViewModel
+@{
+    ViewBag.Title = "Dashboard";
+}
+@section CSS {
+    @Styles.Render("~/Content/css")
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/dashboard")
+    <script type="text/javascript">
+        //$(function () {
+        //    widget.init();
+        //});
+    </script>
+}
+
+
+
+<div class="rite-content">
+    <div id="dashboard-content">
+        <h2>Dashboard</h2>
+
+        @foreach (var item in Model.items)
+        {
+            <div class="rite-widget" data-url=@item.Url>
+                <div>
+                    <div class="rite-widget-icon @item.css "></div>
+                    <div class="rite-widget-title"><span>@item.name</span></div>
+                    <div class="rite-widget-desc"><span>@item.desc</span></div>
+                </div>
+            </div>
+        }
+    </div>
+    </div>
+
+<script>
+    $(function()
+    {
+        $(".rite-widget").on("click", function () {
+            var url = $(this).data('url');
+            window.location.href = url;
+        })
+    })
+</script>

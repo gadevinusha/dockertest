@@ -1,0 +1,96 @@
+body {
+}
+.rite-panelbar {
+  /*margin: 3px 3px !important;*/
+}
+
+.rite-panelbar-content {
+  padding: 10px;
+  background-color: white;
+  overflow: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+.rite-container {
+  /*max-width:99.5%!important;*/
+  max-width: 100% !important;
+}
+
+.search {
+  padding: 10px;
+  font-size: 10px;
+}
+
+#header span {
+  display: block;
+  background-color: #9c9a9a;
+  line-height: 2.43em;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+}
+
+.column {
+  /*vertical-align: top;*/
+  padding-left: 5px;
+  margin: 10px;
+}
+
+  .column td {
+    /*vertical-align: top;*/
+    padding: 0.25em 0;
+  }
+
+.rite-label {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+table.search td {
+  padding-left: 10px;
+}
+
+
+#workorder-search .search input {
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.grid {
+  /*background-color:gainsboro;*/
+  margin-top: 10px;
+  /*margin:*/
+}
+
+table.gridTable {
+  width: 100%;
+  display: table;
+  padding: 20px;
+  border-color: grey;
+  /*border: 5px solid black;*/
+}
+
+  table.gridTable th, table.gridTable td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+  }
+
+  table.gridTable th {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+.gridTable tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+.btn {
+  border-radius: 5px;
+  font-size: 10px;
+  background-color:ActiveBorder;
+}

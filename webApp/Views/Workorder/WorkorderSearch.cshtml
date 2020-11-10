@@ -1,0 +1,117 @@
+﻿
+@{
+    ViewBag.Title = "WorkorderSearch";
+}
+
+@*<h2>WorkorderSearch</h2>*@
+@*<panel>*@
+<div id="wosearch" class="rite-container">
+   <div id="header">
+       <span>Search</span>
+   </div>
+    <div id="workordersearch-panelbar" class="rite-panelbar">
+      @*  <form id="workorder-search"*@
+        <form id="workorder-search" class="rite-panelbar-content">
+            <table class="search">
+                <tr>
+                    <td>
+                        <table>
+                            <tr class="column"><td><label class="rite-label">EquipmentCode</label></td><td><input type="text" id="EquipmentCode" name="EquipmentCode" /></td></tr>
+                            <tr class="column"><td><label class="rite-label">Serial No</label></td><td><input type="text" id="SerialNo" name="SerialNo" /></td></tr>
+                            <tr class="column"><td><label class="rite-label">Part No</label></td><td><input type="text" id="PartNo" name="PartNo" /></td></tr>
+                            <tr class="column"><td><label class="rite-label">Tool Set</label></td><td><input type="text" id="ToolSet" name="ToolSet" /></td></tr>
+                            <tr class="column"><td><label class="rite-label">Work Order</label></td><td><input type="text" id="Workorder" name="Workorder" /></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr class="column"><td><label class="rite-label">Status</label></td><td><input type="text" id="EquipmentCode" name="EquipmentCode" /></td></tr>
+                            <tr class="column"><td><label class="rite-label">Type</label></td><td><input type="text" id="SerialNo" name="SerialNo" /></td></tr>
+                            <tr class="column"><td><label class="rite-label">Test</label></td><td><input type="text" id="PartNo" name="PartNo" /></td></tr>
+                            <tr class="column"><td><label class="rite-label">Ldap Alias</label></td><td><input type="text" id="ToolSet" name="ToolSet" /></td></tr>
+                            <tr class="column"><td><label class="rite-label">WO Source</label></td><td><input type="text" id="Workorder" name="Workorder" /></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr class="column"><td><label class="rite-label">Located</label></td><td><input type="text" id="EquipmentCode" name="EquipmentCode" /></td></tr>
+                            <tr class="column"><td><label class="rite-label">WO AU</label></td><td><input type="text" id="SerialNo" name="SerialNo" /></td></tr>
+                            <tr class="column"><td><label class="rite-label">Area</label></td><td><input type="text" id="PartNo" name="PartNo" /></td></tr>
+                            <tr class="column"><td><label class="rite-label">Geo Market</label></td><td><input type="text" id="ToolSet" name="ToolSet" /></td></tr>
+                            <tr class="column"><td><label class="rite-label"></label></td><td></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr class="column"><td><label class="rite-label">Sub GeoMarket</label></td><td><input type="text" id="EquipmentCode" name="EquipmentCode" /></td></tr>
+                            <tr class="column"><td><label class="rite-label">Country</label></td><td><input type="text" id="SerialNo" name="SerialNo" /></td></tr>
+                            <tr class="column"><td><label class="rite-label">FR No</label></td><td><input type="text" id="PartNo" name="PartNo" /></td></tr>
+                            <tr class="column"><td><label class="rite-label">WO Part No</label></td><td><input type="text" id="ToolSet" name="ToolSet" /></td></tr>
+                            <tr class="column"><td><label class="rite-label"></label></td><td></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr class="column"><td><label class="rite-label">Create Date From</label></td><td><input type="text" id="EquipmentCode" name="EquipmentCode" /></td></tr>
+                            <tr class="column"><td><label class="rite-label">Create Date To: </label></td><td><input type="text" id="SerialNo" name="SerialNo" /></td></tr>
+                            <tr class="column"><td><label class="rite-label">Actual Comp. Dt Fr</label></td><td><input type="text" id="PartNo" name="PartNo" /></td></tr>
+                            <tr class="column"><td><label class="rite-label">Actual Comp. Dt To:</label></td><td><input type="text" id="ToolSet" name="ToolSet" /></td></tr>
+                            <tr class="column"><td><label class="rite-label"></label></td><td></td></tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <input type="button" class="btn" id="Search" value="Search" />
+                <input type="button" class="btn" id="Reset" value="Reset" />
+            </div>
+        </form>
+    </div>
+</div>
+@*</panel>*@
+<div id="wogrid" class="grid">
+    <table class="gridTable">
+        <tr>
+            <th>Workorder</th>
+            <th>Equipment Code</th>
+            <th>Serial No</th>
+            <th>Status</th>
+            <th>Test</th>
+            <th>Level</th>
+            <th>Actual End Date</th>
+            <th>AU</th>
+            <th>PAU</th>
+            <th>Assigned To</th>
+        </tr>
+        <tr>
+            <td>MNT11824540</td>
+            <td>XHMS-AA</td>
+            <td>SNTEST7820_3</td>
+            <td>Maintenance - Planned</td>
+            <td>SL Sonde</td>
+            <td>1</td>
+            <td></td>
+            <td>BRMA-WL10</td>
+            <td>BRMA-WL10</td>
+            <td>vgade2</td>
+        </tr>
+        <tr>
+            <td>MNT11824540</td>
+            <td>XHMS-AA</td>
+            <td>SNTEST7820_3</td>
+            <td>Maintenance - Planned</td>
+            <td>SL Sonde</td>
+            <td>1</td>
+            <td></td>
+            <td>BRMA-WL10</td>
+            <td>BRMA-WL10</td>
+            <td>vgade2</td>
+        </tr>
+    </table>
+</div>
+<script>
+    $(function()
+    {
+        //$('#workordersearch-panelbar').kendoPanelBar();
+    })
+</script>
