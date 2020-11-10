@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "dockertestcluster1-9234"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "dockertestcluster1-9234"
+  template:
+    metadata:
+      labels:
+        app: "dockertestcluster1-9234"
+    spec:
+      containers:
+        - name: "dockertestcluster1-9234"
+          image: "dockeracrtest1.azurecr.io/dockertestcluster1"
+          ports:
+          - containerPort: 80
